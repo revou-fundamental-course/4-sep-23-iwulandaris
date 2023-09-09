@@ -1,0 +1,56 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    background-color: #0F2C59;
+    color: whitesmoke;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    padding: 6px;
+    border: 1px solid #AED2FF;
+    border-radius: 4px;
+    outline: none;
+}
+input:focus {
+    border-color: #0F2C59;
+}
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0F2C59 ;
+}
+button {
+    padding: 8px 8px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #EADBC8;
+    color: rgb(63, 61, 61);
+}
+button:hover {
+    color: black;
+}
+button:active{
+    transform: translateY(3px);
+}
+.hitungluas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+.inputbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-inline-end: 10px;
+}
