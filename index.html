@@ -8,16 +8,54 @@
     </head>
     <body>
         <header>
-            <h1>Kalkulator Hitung Persegi</h1>
+        <p>
+            <span class="font1">Katik </span>
+            <span class="font2">Kalkulator Matematik</span>
+        </p>
         </header>
-        <section class="hitungluas">
-            <label for="inputfield">Sisi Persegi</label>
-            <input id="inputfield" type="number" placeholder="Masukkan sisi">
+    </body>
+        <section class="description">
+            <h2>Welcome to Katik</h2>
+            <p>Hi Sobat. Selamat data di Katik:)</p>
+            <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
         </section>
-        <section class="inputbutton">
-            <button>Hitung</button>
-            <button>Reset</button>
-        </section>
+        <div class="rumus">
+            <section class="luaspersegi">
+                <h1>Luas Persegi</h1>
+                <img src="https://rpp.co.id/wp-content/uploads/2021/05/persegi.jpg">
+                <p>Rumus Luas Persegi yaitu:</p>
+                <p>L = S x S</p>
+                <p>Di mana:</p>
+                <p>L = Luas</p>
+                <p>S = Sisi</p>
+            </section>
+            <section class="kelilingpersegi">
+                <h1>Keliling Persegi</h1>
+                <img src="https://rpp.co.id/wp-content/uploads/2021/05/persegi.jpg">
+                <p>Rumus Keliling Persegi yaitu:</p>
+                <p>K = 4 x S</p>
+                <p>Di mana:</p>
+                <p>K = Keliling</p>
+                <p>S = Sisi</p>
+            </section>
+        </div>
+        <form id="square-form">
+            <label for="sideLength">Sisi Persegi</label>
+            <input id="sideLength" type="number" placeholder="Masukkan sisi" required>
+            <button id="calculationButton" type="submit">Hitung</button>
+            <button id="resetSideLength" type="button">Reset</button>
+        </form>
+        <div id="results">
+                <h3>Hasil Perhitungan Luas</h3>
+                <p>L = S x S</p>
+                <p>L = <span id="side1"></span> x <span id="side2"></span></p>
+                <p>L = <span id="area-result"></span></p>
+                <h3>Hasil Perhitungan Keliling</h3>
+                <p>K = 4 x S</p>
+                <p>K = 4 x <span id="side3"></span></p>
+                <p>K = <span id="perimeter-result"></span></p>
+        </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
 
