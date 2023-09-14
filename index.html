@@ -16,47 +16,133 @@
     </body>
         <section class="description">
             <h2>Welcome to Katik</h2>
-            <p>Hi Sobat. Selamat data di Katik:)</p>
+            <p>Hi Sobat. Selamat datang di Katik:)</p>
             <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
         </section>
+        <!--Perhitungan persegi-->
+        <h1 class="bentukpersegi">PERSEGI</h1>
         <div class="rumus">
             <section class="luaspersegi">
                 <h1>Luas Persegi</h1>
-                <img src="https://rpp.co.id/wp-content/uploads/2021/05/persegi.jpg">
-                <p>Rumus Luas Persegi yaitu:</p>
-                <p>L = S x S</p>
-                <p>Di mana:</p>
-                <p>L = Luas</p>
-                <p>S = Sisi</p>
+                <div class="containerLP">
+                    <div class="keteranganLP">
+                        <img src="https://rpp.co.id/wp-content/uploads/2021/05/persegi.jpg">
+                        <p>Rumus Luas Persegi:</p>
+                        <p>L = s x s</p>
+                        <p>Di mana:</p>
+                        <p>L = Luas</p>
+                        <p>s = Sisi</p>
+                    </div>
+                    <div class="perhitunganLP">
+                            <form id="square-form1">
+                                <label for="sideLength1">Sisi Persegi</label>
+                                <input id="sideLength1" type="number" placeholder="Masukkan sisi" required>
+                                <button id="calculationButton1" type="submit">Hitung</button>
+                                <button id="resetSideLength1" type="button">Reset</button>
+                                </form>
+                            <div id="results">
+                                <h3>Hasil Perhitungan Luas</h3>
+                                <p>L = s x s</p>
+                                <p>L = <span id="side1"></span> x <span id="side2"></span></p>
+                                <p>L = <span id="area-result"></span></p>
+                            </div>
+                            <script src="js/script.js"></script>
+                    </div>
+                </div>
             </section>
             <section class="kelilingpersegi">
                 <h1>Keliling Persegi</h1>
-                <img src="https://rpp.co.id/wp-content/uploads/2021/05/persegi.jpg">
-                <p>Rumus Keliling Persegi yaitu:</p>
-                <p>K = 4 x S</p>
-                <p>Di mana:</p>
-                <p>K = Keliling</p>
-                <p>S = Sisi</p>
+                <div class="containerKP">
+                    <div class="keteranganKP">
+                        <img src="https://rpp.co.id/wp-content/uploads/2021/05/persegi.jpg">
+                        <p>Rumus Keliling Persegi:</p>
+                        <p>K = 4 x s</p>
+                        <p>Di mana:</p>
+                        <p>K = Keliling</p>
+                        <p>s = sisi</p>
+                    </div>
+                    <div class="perhitunganKP">
+                        <form id="square-form2">
+                            <label for="sideLength2">Sisi Persegi</label>
+                            <input id="sideLength2" type="number" placeholder="Masukkan sisi" required>
+                            <button id="calculationButton2" type="submit">Hitung</button>
+                            <button id="resetSideLength2" type="button">Reset</button>
+                        </form>
+                        <div id="results">
+                                <h3>Hasil Perhitungan Keliling</h3>
+                                <p>K = 4 x s</p>
+                                <p>K = 4 x <span id="side3"></span></p>
+                                <p>K = <span id="perimeter-result"></span></p>
+                        </div>
+                        <script src="js/script.js"></script>
+                    </div>
+                </div>
             </section>
         </div>
-        <form id="square-form">
-            <label for="sideLength">Sisi Persegi</label>
-            <input id="sideLength" type="number" placeholder="Masukkan sisi" required>
-            <button id="calculationButton" type="submit">Hitung</button>
-            <button id="resetSideLength" type="button">Reset</button>
-        </form>
-        <div id="results">
-                <h3>Hasil Perhitungan Luas</h3>
-                <p>L = S x S</p>
-                <p>L = <span id="side1"></span> x <span id="side2"></span></p>
-                <p>L = <span id="area-result"></span></p>
-                <h3>Hasil Perhitungan Keliling</h3>
-                <p>K = 4 x S</p>
-                <p>K = 4 x <span id="side3"></span></p>
-                <p>K = <span id="perimeter-result"></span></p>
+        <!--Perhitungan persegi panjang-->
+        <h1 class="bentukpersegipanjang">PERSEGI PANJANG</h1>
+        <div class="rumus">
+            <section class="luaspersegipj">
+                <h1>Luas Persegi Panjang</h1>
+                <div class="containerLPJ">
+                    <div class="keteranganLPJ">
+                        <img src="https://rumuspintar.com/wp-content/uploads/2019/07/Rumus-Persegi-Panjang.jpg">
+                        <p>Rumus Luas P. Panjang:</p>
+                        <p>Luas = p x l</p>
+                        <p>Di mana:</p>
+                        <p>p = panjang</p>
+                        <p>l = lebar</p>
+                    </div>
+                    <div class="perhitunganLPJ">
+                            <form id="square-form3">
+                                <label for="sideLength3">Panjang</label>
+                                <input id="sideLength3" type="number" placeholder="Masukkan panjang" required>
+                                <label for="sideLength4">Lebar</label>
+                                <input id="sideLength4" type="number" placeholder="Masukkan lebar" required>
+                                <button id="calculationButton3" type="submit">Hitung</button>
+                                <button id="resetSideLength3" type="button">Reset</button>
+                                </form>
+                            <div id="results">
+                                <h3>Hasil Perhitungan Luas</h3>
+                                <p>Luas = p x l</p>
+                                <p>Luas = <span id="side4"></span> x <span id="side5"></span></p>
+                                <p>Luas = <span id="area-resultpj"></span></p>
+                            </div>
+                            <script src="js/script.js"></script>
+                    </div>
+                </div>
+            </section>
+            <section class="kelilingpersegipj">
+                <h1>Keliling Persegi Panjang</h1>
+                <div class="containerKPJ">
+                    <div class="keteranganKPJ">
+                        <img src="https://rumuspintar.com/wp-content/uploads/2019/07/Rumus-Persegi-Panjang.jpg">
+                        <p>Rumus Keliling P. Panjang:</p>
+                        <p>K = 2 x (p + l)</p>
+                        <p>Di mana:</p>
+                        <p>K = Keliling</p>
+                        <p>p = panjang</p>
+                        <p>l = lebar</p>
+                    </div>
+                    <div class="perhitunganKPJ">
+                        <form id="square-form4">
+                            <label for="sideLength5">Panjang</label>
+                            <input id="sideLength5" type="number" placeholder="Masukkan panjang" required>
+                            <label for="sideLength6">Lebar</label>
+                            <input id="sideLength6" type="number" placeholder="Masukkan lebar" required>                            
+                            <button id="calculationButton4" type="submit">Hitung</button>
+                            <button id="resetSideLength4" type="button">Reset</button>
+                        </form>
+                        <div id="results">
+                                <h3>Hasil Perhitungan Keliling</h3>
+                                <p>K = 2 x (p + l)</p>
+                                <p>K = 2 x (<span id="side6"></span> + <span id="side7"></span>)</p>
+                                <p>K = <span id="perimeter-resultpj"></span></p>
+                        </div>
+                        <script src="js/script.js"></script>
+                    </div>
+                </div>
+            </section>
         </div>
-        <script src="js/script.js"></script>
     </body>
 </html>
-
-<!--ini untuk coba git-->

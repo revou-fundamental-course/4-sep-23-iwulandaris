@@ -31,10 +31,10 @@ input:focus {
 }
 label {
     display: block;
-    margin-bottom: 4px;
-    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
     font-weight: bold;
-    color: #0F2C59 ;
 }
 button {
     padding: 8px 8px;
@@ -86,11 +86,11 @@ h1 {
 }
 .rumus {
     display: flex;
-    justify-content: space-between;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
-.luaspersegi, .kelilingpersegi {
+.luaspersegi, .kelilingpersegi,.luaspersegipj, .kelilingpersegipj {
     flex-basis: 15%;
     line-height: 3px;
     font-size: smaller;
@@ -101,4 +101,25 @@ h1 {
 }
 #results {
         line-height: 4px;
+}
+.containerLP, .containerKP, .containerLPJ, .containerKPJ {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 4%;
+}
+.keteranganLP, .perhitunganLP, .keteranganKP, .perhitunganKP, .keteranganLPJ, .perhitunganLPJ, .keteranganKPJ, .perhitunganKPJ{
+    flex-basis: 15%;
+    line-height: 3px;
+    font-size: smaller;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bentukpersegi, .bentukpersegipanjang {
+    display: flex;
+    flex-direction: column;
+    background-color: #0F2C59;
+    font-size: 25px;
+    text-decoration: none;
+    color: whitesmoke;
 }
